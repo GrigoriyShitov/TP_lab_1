@@ -64,7 +64,7 @@ Base* Keeper::operator[](int index)
 
 void Keeper::inputFromFile()
 {
-	ifstream input("keeper.txt");
+	ifstream input("save.txt");
 	if (input.is_open())
 	{
 		string tmpS;
@@ -104,7 +104,7 @@ void Keeper::inputFromFile()
 
 void Keeper::printToFile()
 {
-	ofstream output("keeper.txt");
+	ofstream output("save.txt");
 	output << size << endl;
 	for (int i = 0; i < size; i++)
 		data[i]->printToFile(output);
@@ -114,10 +114,10 @@ void Keeper::printToFile()
 void Keeper::printToConsole()
 {
 	if (size == 0)
-		cout << "Книжный магазин пуст" << endl;
+		cout << "Оркестр пуст" << endl;
 	else
 	{
-		cout << "Содержимое книжного магазина: " << endl;
+		cout << "Содержимое оркестра: " << endl;
 		for (int i = 0; i < size; i++)
 		{
 			cout << i + 1 << ". ";

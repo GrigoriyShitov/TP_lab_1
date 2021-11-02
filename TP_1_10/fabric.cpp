@@ -2,12 +2,12 @@
 
 Base* createObj(string name)
 {
-	if (name == "Канцелярия")
-		return new Chancellery();
-	if (name == "Учебник")
-		return new Textbook();
-	if (name == "Книга")
-		return new Book();
+	if (name == "Ударный")
+		return new Percussion();
+	if (name == "Струнный")
+		return new Stringed();
+	if (name == "Духовой")
+		return new Wind();
 	string err = "Тип объекта не распознан";
 	throw err;
 }

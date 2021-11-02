@@ -1,0 +1,21 @@
+3
+Ударный
+type
+name
+fio
+1
+23
+Струнный
+name
+namef
+fio
+sdfasf saf
+13
+213
+Духовой
+name
+namep
+fio
+deff
+213
+213

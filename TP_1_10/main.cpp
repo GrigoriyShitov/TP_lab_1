@@ -71,17 +71,17 @@ void printMenu() {
 void addObject(Keeper& keeper)
 {
 	cout << "Выберете объект для добавления" << endl;
-	cout << "1. Книга" << endl;
-	cout << "2. Учебник" << endl;
-	cout << "3. Канцелярия" << endl;
+	cout << "1. Ударный" << endl;
+	cout << "2. Струнный" << endl;
+	cout << "3. Духовой" << endl;
 	int typeInt = safeInput(1, 3);
 	string typeS;
 	if (typeInt == 1)
-		typeS = "Книга";
+		typeS = "Ударный";
 	if (typeInt == 2)
-		typeS = "Учебник";
+		typeS = "Струнный";
 	if (typeInt == 3)
-		typeS = "Канцелярия";
+		typeS = "Духовой";
 	Base* object = createObj(typeS);
 	object->inputFromConsole();
 	keeper.add(object);
@@ -90,7 +90,7 @@ void addObject(Keeper& keeper)
 void changeObject(Keeper& keeper)
 {
 	if (keeper.getSize() == 0)
-		cout << "Книжный магазин пуст. Нечего изменять" << endl;
+		cout << "Оркестр пуст. Нечего изменять" << endl;
 	else
 	{
 		keeper.printToConsole();
@@ -103,7 +103,7 @@ void changeObject(Keeper& keeper)
 void deleteObject(Keeper& keeper)
 {
 	if (keeper.getSize() == 0)
-		cout << "Книжный магазин пуст. Нечего удалять" << endl;
+		cout << "Оркестр пуст. Нечего удалять" << endl;
 	else
 	{
 		keeper.printToConsole();

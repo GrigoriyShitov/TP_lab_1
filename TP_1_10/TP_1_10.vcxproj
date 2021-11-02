@@ -140,6 +140,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Base.cpp" />
+    <ClCompile Include="fabric.cpp" />
+    <ClCompile Include="Keeper.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Percussion.cpp" />
     <ClCompile Include="Stringed.cpp" />
     <ClCompile Include="helper.cpp" />
@@ -147,10 +150,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base.h" />
+    <ClInclude Include="fabric.h" />
+    <ClInclude Include="Keeper.h" />
     <ClInclude Include="Percussion.h" />
     <ClInclude Include="Stringed.h" />
     <ClInclude Include="helper.h" />
     <ClInclude Include="Wind.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="save.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

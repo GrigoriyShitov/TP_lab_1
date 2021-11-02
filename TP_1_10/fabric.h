@@ -1,7 +1,7 @@
 #pragma once
-#include "Book.h"
-#include "TextBook.h"
-#include "Chancellery.h"
+#include "Percussion.h"
+#include "Stringed.h"
+#include "Wind.h"
 
 Base* createObj(string name);
 
